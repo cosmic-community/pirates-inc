@@ -33,7 +33,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {services.map((service) => (
+            {services.map((service: Service) => (
               <ServiceCard key={service.id} service={service as Service} />
             ))}
           </div>
@@ -53,7 +53,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {caseStudies.map((caseStudy) => (
+            {caseStudies.map((caseStudy: CaseStudy) => (
               <CaseStudyCard key={caseStudy.id} caseStudy={caseStudy as CaseStudy} />
             ))}
           </div>
@@ -73,7 +73,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {team.map((member) => (
+            {team.map((member: TeamMember) => (
               <TeamCard key={member.id} member={member as TeamMember} />
             ))}
           </div>
@@ -93,7 +93,7 @@ export default async function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial) => (
+            {testimonials.map((testimonial: Testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial as Testimonial} />
             ))}
           </div>
